@@ -30,7 +30,7 @@ Now we have our Teams account we have access to developer site for Webex Teams: 
 
 To do this navigate to the 'My Apps' page of your account https://developer.webex.com/my-apps select 'Create New App' and when prompted choose the Bot type then complete the form which asks for Username / Bot Name, Bot Icon and a short discription. Once submitted, you will then be given an access token. ***Save this as we will use it later in the Built.io steps.***
 
-![alt text](Athena_Images1/bot-bearer.gif)
+![alt text](images/bot-bearer.gif)
 
 ### Creating a Webex Teams Room
 In this section you will download the Webex Teams desktop client, create a new space and add your bot to the space.
@@ -45,7 +45,7 @@ In this section you will download the Webex Teams desktop client, create a new s
 
 5. Type the name of the Bot you created.
 
-![alt text](Athena_Images1/create-space.gif "Create a Teams Space")
+![alt text](images/create-space.gif "Create a Teams Space")
 
 COOL! Now you have a teams space and a bot, but it's not very interesting yet. We now need to teach it how to talk and do stuff.
 
@@ -59,7 +59,7 @@ If you have not already done so, log in or sign up [Built.io](http://built.io) a
 
 #### Steps 1 - 4 Accessing the prebuilt Bot Library
 
-![alt text](Athena_Images1/step1.gif "Step 1")
+![alt text](images/step1.gif "Step 1")
 
 1. Once you have logged in to built.io you will see the default screen where your projects will sit, right now we don't have any so lets move to step 2.
 
@@ -73,7 +73,7 @@ Now we start to populate the workflow with the Webex Teams information generated
 
 #### Steps 5 - 6 Adding the Bot Access Token
 
-![alt text](Athena_Images1/step2.gif "Step 2")
+![alt text](images/step2.gif "Step 2")
 
 5. From the dialoge box select "Connect to Cisco Webex Teams Bot"
 
@@ -81,7 +81,7 @@ Now we start to populate the workflow with the Webex Teams information generated
 
 #### Steps 7 - 12 Adding the RoomID
 
-![alt text](Athena_Images1/step3.gif "Step 3")
+![alt text](images/step3.gif "Step 3")
 
 7.Now we need to add our space ID. To do this we need to go back to [developer.webex.com](https://developer.webex.com) and select documentation. We are looking for API REFERENCE and Rooms. [Shortcut here](https://developer.webex.com/docs/api/v1/rooms)
 
@@ -101,7 +101,7 @@ Leave Trigger Execution as default "if other user posts a message"
 
 #### Steps 12 - 14 Getting our GIPHY API Key
 
-![alt text](Athena_Images1/step4.gif "Giphy step")
+![alt text](images/step4.gif "Giphy step")
 
 12.Now you will need your Giphy API. You get this by logging into [developers.giphy.com](https://developers.giphy.com) with your Giphy credentials you created earlier. If you didn't create a Giphy account now.
 
@@ -111,26 +111,26 @@ Leave Trigger Execution as default "if other user posts a message"
 
 #### Steps 15 - 16 Adding our GIPHY API Key and finishing up
 
-![alt text](Athena_Images1/step5.gif "Giphy step")
+![alt text](images/step5.gif "Giphy step")
 
 15.Now lets go back to built.io and press next on our form to proceed selecting a new Giphy Connection
 
 16.Add the Key you got in the previous step and press next, Built.IO will ask you to confirm the Bot you wish to use one more time and the RoomID. Confirm these and finish up by 'importing this workflow' This moves the bot you've jsut created into your own projects space.
 
-![alt text](Athena_Images1/step6.gif "step 6")
+![alt text](images/step6.gif "step 6")
 
 18. Check the Bot has imported correctly by going to your projects and making sure its there. Lastly, check you workflow is set to ON.
 
-![alt text](Athena_Images1/step7.gif "step 7")
+![alt text](images/step7.gif "step 7")
 
 ## Testing it All Works
 
 1. Go to your webex Team desktop and into the space you created earlier with the Bot in it. Say "hello" to your Bot (remember to address the bot directly with an "@")
 
-![alt text](Athena_Images1/teamsbottalk.png "Find Space ID")
+![alt text](images/teamsbottalk.png "Find Space ID")
 
 and....drop the mic! You have a working chatbot with integrations.
-![alt text](Athena_Images1/hilarious.png "Find Space ID")
+![alt text](images/hilarious.png "Find Space ID")
 
 ## Further resources
 
