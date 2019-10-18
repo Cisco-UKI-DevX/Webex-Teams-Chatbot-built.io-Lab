@@ -1,18 +1,16 @@
-# Athena Hack ChatBot - Cisco Webex Lab Guide
-If at any point the guide is not clear or you get stuck, just raise your hand and one of the Cisco team will help you out.
-
+# Webex Teams ChatBot with Built.io - Lab Guide
 
 ## Getting Started
 
-These instructions will take you through the different tools and platforms used in this lab and provide you with a basic introduction to using the Cisco Webex Teams API and low code environment Built.io. With the aim of building a simple ChatBot. After completing this guide you may want to include Webex Teams in your own projects, if you do please reach out to one of our team onsite to let them know and see how we can support!
+These instructions will take you through the different tools and platforms used in this lab and provide you with a basic introduction to using the Cisco Webex Teams API and low code environment Built.io. With the aim of building a simple ChatBot.
 
 __In this lab you will__
-1. Create a Chatbot _(webex Teams Devepoper Portal)_
+1. Create a Chatbot _(Webex Teams Developer Portal)_
 2. Create a Teams Space _(Webex Teams Desktop)_
-3. Create a built.io worklfow to control your Chatbot _(Built.io)_
+3. Create a built.io workflow to control your Chatbot _(Built.io)_
 
 You will need:
-* A webex Teams Account..
+* A Webex Teams Account..
 * A Webex Teams Desktop or Browser Client..
 * A Built.io account..
 * A Giphy Account..
@@ -41,9 +39,9 @@ You will also need the following accounts for this lab. Make sure you create the
 
 ## Creating our Bot in Webex Teams and getting our access token
 
-Now we have our Teams account we have access to developer site for Webex Teams: https://developer.webex.com. This portal has guides to the Teams API, SDK's available and example projects to help you on your developer journey. We won't go into the details of this site in this lab but we do need to create our bot and get an access token/
+Now we have our Teams account we have access to developer site for Webex Teams: https://developer.webex.com. This portal has guides to the Teams API, SDK's available and example projects to help you on your developer journey. We won't go into the details of this site in this lab but we do need to create our bot and get an access token.
 
-To do this navigate to the 'My Apps' page of your account https://developer.webex.com/my-apps select 'Create New App' and when prompted choose the Bot type then complete the form which asks for Username / Bot Name, Bot Icon and a short discription. Once submitted, you will then be given an access token. ***Save this as we will use it later in the Built.io steps.***
+To do this navigate to the 'My Apps' page of your account https://developer.webex.com/my-apps select 'Create New App' and when prompted choose the Bot type then complete the form which asks for Username / Bot Name, Bot Icon and a short description. Once submitted, you will then be given an access token. ***Save this as we will use it later in the Built.io steps.***
 
 ![alt text](images/bot-bearer.gif)
 
@@ -69,7 +67,7 @@ COOL! Now you have a teams space and a bot, but it's not very interesting yet. W
 
 ## Creating a Built.io Workflow for your Bot
 
-Now its time to start to give our bot some intelligence. In this section we will build a workflow in built.io that will instruct our bot to perform some functions.
+Now it's time to start to give our bot some intelligence. In this section we will build a workflow in built.io that will instruct our bot to perform some functions.
 
 We will use a standard Webex Teams workflow template
 
@@ -79,13 +77,13 @@ If you have not already done so, log in or sign up [Built.io](http://built.io) a
 
 ![alt text](images/step1.gif "Step 1")
 
-1. Once you have logged in to built.io you will see the default screen where your projects will sit, right now we have a default project with an "Onboarding Flow#1 template" Ignore this. Nothing to see here. Lets move to step 2.
+1. Once you have logged in to built.io you will see the default screen where your projects will sit, right now we have a default project with an "Onboarding Flow#1 template" Ignore this. Nothing to see here. Let's move to step 2.
 
 2. select "Library" and you will see a list of pre-defined workflows. We want to select the "Webex Teams BOT" workflow ***There are two so make sure you pick the one that mentions BOT in the title (It's normally on the right hand side)***
 
 3. The Webex Teams Bot workflow will be added to your default project
 
-4. Select the worflow and then click it to open the dialogue
+4. Select the workflow and then click it to open the dialogue
 
 Now we start to populate the workflow with the Webex Teams information generated in the previous steps
 
@@ -93,9 +91,9 @@ Now we start to populate the workflow with the Webex Teams information generated
 
 ![alt text](images/step2.gif "Step 2")
 
-5. From the dialoge box select "Connect to Cisco Webex Teams Bot"
+5. From the dialogue box select "Connect to Cisco Webex Teams Bot"
 
-6. Give the Bot a name and insert the Bot Token you recored in the prevous Bot creation steps _(you saved/copied it earlier remember, when you created the bot!)_  :-)
+6. Give the Bot a name and insert the Bot Token you recored in the previous Bot creation steps _(you saved/copied it earlier remember, when you created the bot!)_  :-)
 
 #### Steps 7 - 12 Adding the RoomID
 
@@ -107,10 +105,10 @@ Now we start to populate the workflow with the Webex Teams information generated
 
 9.The API form is populated for you. Just press "Run"
 
-10.The API request will be made and the Response will list all rooms assocaited with your webex account.
+10.The API request will be made and the Response will list all rooms associated with your Webex account.
 
-Find the room ID associated with the space you created earlier. (Like in the example above it's normally the first room. Copy the "id" from the response. For exmaple "Y2lzY29zcGFyazovL3VzL1JPT00vNzM0ODIzNzAtNWJiMC0xMWU5LTgzY2QtMGQ1YWM4YWM2OGMx"
-Remember to remove the quotes)
+Find the room ID associated with the space you created earlier. Like in the example above it's normally the first room. Copy the "id" from the response. For example "Y2lzY29zcGFyazovL3VzL1JPT00vNzM0ODIzNzAtNWJiMC0xMWU5LTgzY2QtMGQ1YWM4YWM2OGMx"
+(Remember to remove the quotes).
 
 11.Go back to built.io and Add the Room ID to you built.io workflow
 
@@ -135,7 +133,7 @@ You are doing great. We are almost there!
 
 15.Now lets go back to built.io and press next on our form to proceed selecting a new Giphy Connection
 
-16.Add the Key you got in the previous step and press next, Built.IO will ask you to confirm the Bot you wish to use one more time and the RoomID. Confirm these and finish up by 'importing this workflow' This moves the bot you've jsut created into your own projects space.
+16.Add the Key you got in the previous step and press next, Built.IO will ask you to confirm the Bot you wish to use one more time and the RoomID. Confirm these and finish up by 'importing this workflow' This moves the bot you've just created into your own projects space.
 
 ![alt text](images/step6.gif "step 6")
 
@@ -147,14 +145,14 @@ You are doing great. We are almost there!
 
 ## Testing it All Works
 
-1. Go to your webex Team desktop and into the space you created earlier with the Bot in it. Say "hello" to your Bot (remember to address the bot directly with an "@")
+1. Go to your Webex Team desktop and into the space you created earlier with the Bot in it. Say "hello" to your Bot (remember to address the bot directly with an "@")
 
 ![alt text](images/sendmessage.gif "Find Space ID")
 
 and....drop the mic! You have a working chatbot with integrations.
 
 ## Have a Play
-Feel free to spend a bit of time understanding the details of this simple built.io workflow. Looks how the splicing is acheived before we call the Giphy API. Click a connecter and see that you can add a conditional to the trigger. Change what you bot is saying. Why not add some more elements to the workflow, i dunno.. send a tweet.
+Feel free to spend a bit of time understanding the details of this simple built.io workflow. Looks how the splicing is achieved before we call the Giphy API. Click a connecter and see that you can add a conditional to the trigger. Change what you bot is saying. Why not add some more elements to the workflow, i dunno.. send a tweet.
 
 If you are really keen, now you understand the basics of teams, you can scrap built.io and code directly against the Webex Teams API yourself. All you need is on the developer.webex.com pages.
 
@@ -169,11 +167,7 @@ https://developer.cisco.com/join/athenahack19
 The free account on built.io is limited to two triggers. Remember you can create two workflows with a trigger in each to determine your chatbot behaviours. We did that with our Plastic reporting Teams Space. (examples below)
 
 ![alt text](https://github.com/dcgubbins/athena/blob/master/images/AthenaBuiltIOFlow1.jpg)
-Integrates Webex Teams with Diagflow, analyses the responses and captures the data
+Integrates Webex Teams with Dialogflow, analyses the responses and captures the data
 
 ![alt text](https://github.com/dcgubbins/athena/blob/master/images/AthenaBuiltIOFlow2.jpg)
-detects the picture has been uploaded, sends it to dropbox, uses API to mae it public shareable, retrieves all the data from the Diagflow conversation and then posts to Smartsheet.
-
-**For more information or you want to get your hands on this workflow have chat with one of the Cisco team who will be able to share it into your BuiltIO account**
-
-**_if you have any questions, please reach out to our fantastic team onsite!_**
+detects the picture has been uploaded, sends it to dropbox, uses API to make it public shareable, retrieves all the data from the Dialogflow conversation and then posts to Smartsheet.
