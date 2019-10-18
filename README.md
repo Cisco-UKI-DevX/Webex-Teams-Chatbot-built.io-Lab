@@ -160,14 +160,14 @@ If you are really keen, now you understand the basics of teams, you can scrap bu
 
 Webex is just one of the platforms you have available to you, now you have a Webex Teams account you can use this to access the rest of our Cisco Developer Network and the wealth of tools available. This includes API documentation, walkthroughs and Sandboxes that allow you to get hands on with your code. The Cisco DevNet portal covers numerous technologies including AI/ML, collaboration, IoT and more! To access all this completely free content just follow the link below. and login with one of the options presented. Feel free to use the Webex Teams account that you created earlier!
 
-https://developer.cisco.com/join/athenahack19
+https://developer.cisco.com/
 
 
 ## Advanced BuiltIO Workflows
 The free account on built.io is limited to two triggers. Remember you can create two workflows with a trigger in each to determine your chatbot behaviours. We did that with our Plastic reporting Teams Space. (examples below)
 
-![alt text](https://github.com/dcgubbins/athena/blob/master/images/AthenaBuiltIOFlow1.jpg)
+![alt text](images/AthenaBuiltIOFlow1.jpg)
 Integrates Webex Teams with Dialogflow, analyses the responses and captures the data
 
-![alt text](https://github.com/dcgubbins/athena/blob/master/images/AthenaBuiltIOFlow2.jpg)
+![alt text](images/AthenaBuiltIOFlow2.jpg)
 detects the picture has been uploaded, sends it to dropbox, uses API to make it public shareable, retrieves all the data from the Dialogflow conversation and then posts to Smartsheet.
